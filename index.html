@@ -234,6 +234,18 @@ img.soc-ico{display:block;max-width:none}
 .soc-yt{background:#FF0000}
 .soc-vk{background:#0077FF}
 .soc-ico-vk{background:#fff;color:#0077FF}
+
+/* волна света по кнопкам */
+.cta,.soc{position:relative;overflow:hidden;isolation:isolate;transition:transform .2s ease,filter .2s ease,background .2s}
+.cta::after,.soc::after{content:"";position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(100deg,transparent 0%,rgba(255,255,255,.55) 50%,transparent 100%);transform:skewX(-20deg);pointer-events:none;animation:btn-wave 4s ease-in-out infinite}
+.cta:hover,.soc:hover{transform:translateY(-2px)}
+.hero .hero-cta::after{animation-delay:1.2s}
+.song-new .cta::after{animation-delay:.6s}
+.socials .soc:nth-child(1)::after{animation-delay:.35s}
+.socials .soc:nth-child(2)::after{animation-delay:.7s}
+.socials .soc:nth-child(3)::after{animation-delay:1.05s}
+@keyframes btn-wave{0%{left:-70%}30%{left:140%}100%{left:140%}}
+@media (prefers-reduced-motion: reduce){.cta::after,.soc::after{animation:none;display:none}.cta:hover,.soc:hover{transform:none}}
 .contact-lines{margin:24px 0 0;color:var(--muted);font-size:16px}
 .contact-lines div{padding:8px 0}
 
