@@ -142,7 +142,8 @@ section + section{border-top:1px solid var(--line-cool)}
 .song img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:2px}
 .song h3{margin:0 0 6px;font-size:1.75rem}
 .song p{margin:0 0 12px;color:var(--muted);font-size:15.5px}
-.song-link{font-size:15px}
+.song-link{display:inline-block;padding:9px 18px;border:1px solid var(--lamp);border-radius:1px;color:var(--lamp-soft);font-size:14px;font-weight:500;letter-spacing:.01em}
+.song-link:hover{background:var(--lamp);color:#15181D;border-color:var(--lamp)}
 @media (max-width:880px){
   .song-new{grid-template-columns:1fr;gap:30px}
   .song-list{grid-template-columns:1fr;margin-top:44px}
@@ -236,16 +237,20 @@ img.soc-ico{display:block;max-width:none}
 .soc-ico-vk{background:#fff;color:#0077FF}
 
 /* волна света по кнопкам */
-.cta,.soc{position:relative;overflow:hidden;isolation:isolate;transition:transform .2s ease,filter .2s ease,background .2s}
-.cta::after,.soc::after{content:"";position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(100deg,transparent 0%,rgba(255,255,255,.55) 50%,transparent 100%);transform:skewX(-20deg);pointer-events:none;animation:btn-wave 4s ease-in-out infinite}
-.cta:hover,.soc:hover{transform:translateY(-2px)}
+.cta,.soc,.song-link{position:relative;overflow:hidden;isolation:isolate;transition:transform .2s ease,filter .2s ease,background .2s,color .2s}
+.cta::after,.soc::after,.song-link::after{content:"";position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(100deg,transparent 0%,rgba(255,255,255,.55) 50%,transparent 100%);transform:skewX(-20deg);pointer-events:none;animation:btn-wave 4s ease-in-out infinite}
+.cta:hover,.soc:hover,.song-link:hover{transform:translateY(-2px)}
+.song-link::after{background:linear-gradient(100deg,transparent 0%,rgba(232,196,140,.45) 50%,transparent 100%)}
+.song:nth-child(1) .song-link::after{animation-delay:.9s}
+.song:nth-child(2) .song-link::after{animation-delay:1.25s}
+.song:nth-child(3) .song-link::after{animation-delay:1.6s}
 .hero .hero-cta::after{animation-delay:1.2s}
 .song-new .cta::after{animation-delay:.6s}
 .socials .soc:nth-child(1)::after{animation-delay:.35s}
 .socials .soc:nth-child(2)::after{animation-delay:.7s}
 .socials .soc:nth-child(3)::after{animation-delay:1.05s}
 @keyframes btn-wave{0%{left:-70%}30%{left:140%}100%{left:140%}}
-@media (prefers-reduced-motion: reduce){.cta::after,.soc::after{animation:none;display:none}.cta:hover,.soc:hover{transform:none}}
+@media (prefers-reduced-motion: reduce){.cta::after,.soc::after,.song-link::after{animation:none;display:none}.cta:hover,.soc:hover,.song-link:hover{transform:none}}
 .contact-lines{margin:24px 0 0;color:var(--muted);font-size:16px}
 .contact-lines div{padding:8px 0}
 
