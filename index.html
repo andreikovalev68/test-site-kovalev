@@ -9,20 +9,37 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,700&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<link rel="alternate" hreflang="ru" href="https://kovalevandre.ru/">
-<link rel="alternate" hreflang="en" href="https://kovalevandre.ru/en/">
+<link rel="alternate" hreflang="ru" href="http://kovalevandre.ru/">
+<link rel="alternate" hreflang="en" href="http://kovalevandre.ru/en/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#13161B">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Андрей Ковалев (Andre)">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Андрей Ковалев (Andre) – певец, композитор, продюсер">
+<meta property="og:description" content="Авторские песни, концертные программы и шоу «человек-оркестр». 36 лет на сцене, 675 проведённых мероприятий.">
+<meta property="og:url" content="http://kovalevandre.ru/">
+<meta property="og:image" content="http://kovalevandre.ru/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Андрей Ковалев (Andre) – певец, композитор, продюсер">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
 
 <header class="top">
   <div class="wrap">
     <div class="brand">Андрей Ковалев</div>
-    <nav class="nav">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+    <nav class="nav" id="site-nav">
       <a href="#songs">Песни</a>
       <a href="#genre">Жанр</a>
       <a href="#path">Путь</a>
       <a href="#stage">Сцена</a>
       <a href="#programs">Программы</a>
+      <a href="#awards">Признание</a>
       <a href="#contact">Контакты</a>
     </nav>
     <div class="corner">
@@ -37,7 +54,7 @@
   <div class="wrap hero-grid">
     <div class="hero-main">
     <div class="identity">
-      <div class="portrait fade d2"><div class="eyebrow">Эстрадно-джазовый<br>вокал</div><img src="img/portret.jpg" alt="Андрей Ковалев – портрет"></div>
+      <div class="portrait fade d2"><div class="eyebrow">Эстрадно-джазовый<br>вокал</div><img src="img/portret.jpg" width="520" height="780" fetchpriority="high" alt="Андрей Ковалев – портрет"></div>
       <div class="id-text">
         <h1 class="fade d1">Андрей<span class="last">Ковалев</span></h1>
         <div class="alias-row fade d1"><div class="alias">Andre</div><button class="jingle" type="button" data-src="audio/otbivka.mp3" aria-pressed="false" aria-label="Послушать отбивку «Андрей Ковалев»"><span class="jingle-ico" aria-hidden="true">▶</span>Отбивка</button></div>
@@ -52,8 +69,8 @@
     </div>
     </div>
     <figure class="hero-photos fade d3">
-      <img class="ph-a" src="img/makferrin-rukopozhatie.jpg" alt="Андрей Ковалев и Бобби Макферрин пожимают руки">
-      <img class="ph-b" src="img/makferrin-poem.jpg" alt="Андрей Ковалев поет вместе с Бобби Макферрином">
+      <img class="ph-a" src="img/makferrin-rukopozhatie.jpg" width="700" height="1050" alt="Андрей Ковалев и Бобби Макферрин пожимают руки">
+      <img class="ph-b" src="img/makferrin-poem.jpg" width="760" height="570" alt="Андрей Ковалев поет вместе с Бобби Макферрином">
       <figcaption>Bobby McFerrin <span class="cap-note">(автор песни «Don't Worry, Be Happy»)</span></figcaption>
     </figure>
   </div>
@@ -67,7 +84,7 @@
     <article class="song-new">
       <div>
         <div class="song-new-media">
-          <img class="song-cover" src="img/oblozhka-angelina.jpg" alt="Обложка песни «Анджелина ДжолЯ»">
+          <img class="song-cover" src="img/oblozhka-angelina.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Обложка песни «Анджелина ДжолЯ»">
         </div>
       </div>
       <div class="song-new-text">
@@ -80,7 +97,7 @@
 
     <div class="song-list">
       <article class="song">
-        <img src="img/oblozhka-shine.jpg" alt="Обложка песни «Shine So Beautiful»">
+        <img src="img/oblozhka-shine.jpg" width="320" height="320" loading="lazy" decoding="async" alt="Обложка песни «Shine So Beautiful»">
         <div>
           <h3>Shine So Beautiful</h3>
           <p>Новая песня. Музыка и исполнение – Андрей Ковалев, слова – Андрей Макаренко.</p>
@@ -88,7 +105,7 @@
         </div>
       </article>
       <article class="song">
-        <img src="img/oblozhka-zhdi-menya.jpg" alt="Обложка песни «Жди меня»">
+        <img src="img/oblozhka-zhdi-menya.jpg" width="320" height="320" loading="lazy" decoding="async" alt="Обложка песни «Жди меня»">
         <div>
           <h3>Жди меня</h3>
           <p>Лирическая баллада. Музыка, слова и исполнение – Андрей Ковалев.</p>
@@ -96,7 +113,7 @@
         </div>
       </article>
       <article class="song">
-        <img src="img/oblozhka-khoroshiy-ya.jpg" alt="Обложка песни «Хороший Я»">
+        <img src="img/oblozhka-khoroshiy-ya.jpg" width="320" height="320" loading="lazy" decoding="async" alt="Обложка песни «Хороший Я»">
         <div>
           <h3>Хороший Я</h3>
           <p>Романтическая песня на стихи Жанны Сербинович.</p>
@@ -116,7 +133,7 @@
           <svg class="soc-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#fff"/><path d="M5.4 11.7l11.3-4.4c.5-.2 1 .1.8.9l-1.9 9c-.1.6-.5.8-1 .5l-2.9-2.1-1.4 1.3c-.2.2-.3.3-.6.3l.2-2.9 5.3-4.8c.2-.2 0-.3-.3-.1l-6.6 4.1-2.8-.9c-.6-.2-.6-.6.1-.9z" fill="#229ED9"/></svg>Канал в Telegram
         </a>
         <a class="soc soc-max" href="https://max.ru/channel_andreykovalev" target="_blank" rel="noopener">
-          <img class="soc-ico" src="img/max.png" alt="" aria-hidden="true">Канал в MAX
+          <img class="soc-ico" src="img/max.png" width="24" height="24" loading="lazy" alt="" aria-hidden="true">Канал в MAX
         </a>
       </div>
     </aside>
@@ -225,12 +242,12 @@
     <p class="sec-sub">Сольные программы Гильдии артистов эстрады – сольно, с ансамблем или с оркестром.</p>
     <div class="programs">
       <div class="program">
-        <img src="img/afisha-doroga-k-schastyu.jpg" alt="Афиша концертной программы «Дорога к счастью»">
+        <img src="img/afisha-doroga-k-schastyu.jpg" width="800" height="533" loading="lazy" decoding="async" alt="Афиша концертной программы «Дорога к счастью»">
         <h3>Дорога к счастью</h3>
         <p>Концертная программа с песнями о главном – лирика, джазовая свобода и живой контакт с залом.</p>
       </div>
       <div class="program">
-        <img src="img/afisha-pesni-andreya-kovaleva.jpg" alt="Афиша программы «Песни Андрея Ковалева»">
+        <img src="img/afisha-pesni-andreya-kovaleva.jpg" width="800" height="533" loading="lazy" decoding="async" alt="Афиша программы «Песни Андрея Ковалева»">
         <h3>Песни Андрея Ковалева</h3>
         <p>Авторская программа: собственные композиции разных лет в концертных аранжировках.</p>
       </div>
@@ -346,7 +363,7 @@
     </div>
     <div class="socials">
       <a class="soc soc-max" href="https://max.ru/u/f9LHodD0cOJHEV5UIWrDG4EsrNa-ARCWaVCAJSu9IwRGfF7Y2P0AXXWQNxs" target="_blank" rel="noopener">
-        <img class="soc-ico" src="img/max.png" alt="" aria-hidden="true">MAX
+        <img class="soc-ico" src="img/max.png" width="24" height="24" loading="lazy" alt="" aria-hidden="true">MAX
       </a>
       <a class="soc soc-yt" href="https://www.youtube.com/channel/UC1ZiBDK86qS6Nwf5QTrrt1Q" target="_blank" rel="noopener">
         <svg class="soc-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="4.5" width="22" height="15" rx="4.5" fill="#fff"/><path d="M10 8.8v6.4l5.6-3.2z" fill="#FF0000"/></svg>YouTube

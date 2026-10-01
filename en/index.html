@@ -9,20 +9,37 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,700&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../style.css">
-<link rel="alternate" hreflang="ru" href="https://kovalevandre.ru/">
-<link rel="alternate" hreflang="en" href="https://kovalevandre.ru/en/">
+<link rel="alternate" hreflang="ru" href="http://kovalevandre.ru/">
+<link rel="alternate" hreflang="en" href="http://kovalevandre.ru/en/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#13161B">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Andrey Kovalev (Andre)">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Andrey Kovalev (Andre) – singer, composer, producer">
+<meta property="og:description" content="Original songs, concert programs and a one-man-orchestra show. 36 years on stage, 675 events performed.">
+<meta property="og:url" content="http://kovalevandre.ru/en/">
+<meta property="og:image" content="http://kovalevandre.ru/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Andrey Kovalev (Andre) – singer, composer, producer">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
 
 <header class="top">
   <div class="wrap">
     <div class="brand">Andrey Kovalev</div>
-    <nav class="nav">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav class="nav" id="site-nav">
       <a href="#songs">Songs</a>
       <a href="#genre">Genre</a>
       <a href="#path">Career</a>
       <a href="#stage">Stage</a>
       <a href="#programs">Programs</a>
+      <a href="#awards">Awards</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="corner">
@@ -37,7 +54,7 @@
   <div class="wrap hero-grid">
     <div class="hero-main">
     <div class="identity">
-      <div class="portrait fade d2"><div class="eyebrow">Pop and jazz<br>vocals</div><img src="../img/portret.jpg" alt="Portrait of Andrey Kovalev"></div>
+      <div class="portrait fade d2"><div class="eyebrow">Pop and jazz<br>vocals</div><img src="../img/portret.jpg" width="520" height="780" fetchpriority="high" alt="Portrait of Andrey Kovalev"></div>
       <div class="id-text">
         <h1 class="fade d1">Andrey<span class="last">Kovalev</span></h1>
         <div class="alias-row fade d1"><div class="alias">Andre</div><button class="jingle" type="button" data-src="../audio/otbivka.mp3" aria-pressed="false" aria-label="Play the “Andrey Kovalev” jingle"><span class="jingle-ico" aria-hidden="true">▶</span>Jingle</button></div>
@@ -52,8 +69,8 @@
     </div>
     </div>
     <figure class="hero-photos fade d3">
-      <img class="ph-a" src="../img/makferrin-rukopozhatie.jpg" alt="Andrey Kovalev shaking hands with Bobby McFerrin">
-      <img class="ph-b" src="../img/makferrin-poem.jpg" alt="Andrey Kovalev singing with Bobby McFerrin">
+      <img class="ph-a" src="../img/makferrin-rukopozhatie.jpg" width="700" height="1050" alt="Andrey Kovalev shaking hands with Bobby McFerrin">
+      <img class="ph-b" src="../img/makferrin-poem.jpg" width="760" height="570" alt="Andrey Kovalev singing with Bobby McFerrin">
       <figcaption>Bobby McFerrin <span class="cap-note">(author of “Don't Worry, Be Happy”)</span></figcaption>
     </figure>
   </div>
@@ -67,7 +84,7 @@
     <article class="song-new">
       <div>
         <div class="song-new-media">
-          <img class="song-cover" src="../img/oblozhka-angelina.jpg" alt="Cover of the song “Angelina DzholYa”">
+          <img class="song-cover" src="../img/oblozhka-angelina.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Cover of the song “Angelina DzholYa”">
         </div>
       </div>
       <div class="song-new-text">
@@ -80,7 +97,7 @@
 
     <div class="song-list">
       <article class="song">
-        <img src="../img/oblozhka-shine.jpg" alt="Cover of the song “Shine So Beautiful”">
+        <img src="../img/oblozhka-shine.jpg" width="320" height="320" loading="lazy" decoding="async" alt="Cover of the song “Shine So Beautiful”">
         <div>
           <h3>Shine So Beautiful</h3>
           <p>A new song. Music and vocals – Andrey Kovalev, lyrics – Andrey Makarenko.</p>
@@ -88,7 +105,7 @@
         </div>
       </article>
       <article class="song">
-        <img src="../img/oblozhka-zhdi-menya.jpg" alt="Cover of the song “Zhdi menya”">
+        <img src="../img/oblozhka-zhdi-menya.jpg" width="320" height="320" loading="lazy" decoding="async" alt="Cover of the song “Zhdi menya”">
         <div>
           <h3>Zhdi menya <span lang="ru">(«Жди меня»)</span></h3>
           <p>“Wait for Me” – a lyrical ballad. Music, lyrics and vocals – Andrey Kovalev.</p>
@@ -96,7 +113,7 @@
         </div>
       </article>
       <article class="song">
-        <img src="../img/oblozhka-khoroshiy-ya.jpg" alt="Cover of the song “Khoroshiy Ya”">
+        <img src="../img/oblozhka-khoroshiy-ya.jpg" width="320" height="320" loading="lazy" decoding="async" alt="Cover of the song “Khoroshiy Ya”">
         <div>
           <h3>Khoroshiy Ya <span lang="ru">(«Хороший Я»)</span></h3>
           <p>“The Good Me” – a romantic song with lyrics by Zhanna Serbinovich.</p>
@@ -116,7 +133,7 @@
           <svg class="soc-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#fff"/><path d="M5.4 11.7l11.3-4.4c.5-.2 1 .1.8.9l-1.9 9c-.1.6-.5.8-1 .5l-2.9-2.1-1.4 1.3c-.2.2-.3.3-.6.3l.2-2.9 5.3-4.8c.2-.2 0-.3-.3-.1l-6.6 4.1-2.8-.9c-.6-.2-.6-.6.1-.9z" fill="#229ED9"/></svg>Telegram channel
         </a>
         <a class="soc soc-max" href="https://max.ru/channel_andreykovalev" target="_blank" rel="noopener">
-          <img class="soc-ico" src="../img/max.png" alt="" aria-hidden="true">MAX channel
+          <img class="soc-ico" src="../img/max.png" width="24" height="24" loading="lazy" alt="" aria-hidden="true">MAX channel
         </a>
       </div>
     </aside>
@@ -225,12 +242,12 @@
     <p class="sec-sub">Solo programs of the Guild of Variety Artists – solo, with an ensemble or with an orchestra.</p>
     <div class="programs">
       <div class="program">
-        <img src="../img/afisha-doroga-k-schastyu.jpg" alt="Poster of the concert program “Road to Happiness”">
+        <img src="../img/afisha-doroga-k-schastyu.jpg" width="800" height="533" loading="lazy" decoding="async" alt="Poster of the concert program “Road to Happiness”">
         <h3>Road to Happiness</h3>
         <p>A concert program of songs about what matters most – lyricism, jazz freedom and live contact with the audience.</p>
       </div>
       <div class="program">
-        <img src="../img/afisha-pesni-andreya-kovaleva.jpg" alt="Poster of the program “Songs of Andrey Kovalev”">
+        <img src="../img/afisha-pesni-andreya-kovaleva.jpg" width="800" height="533" loading="lazy" decoding="async" alt="Poster of the program “Songs of Andrey Kovalev”">
         <h3>Songs of Andrey Kovalev</h3>
         <p>An original program: his own compositions from different years in concert arrangements.</p>
       </div>
@@ -346,7 +363,7 @@
     </div>
     <div class="socials">
       <a class="soc soc-max" href="https://max.ru/u/f9LHodD0cOJHEV5UIWrDG4EsrNa-ARCWaVCAJSu9IwRGfF7Y2P0AXXWQNxs" target="_blank" rel="noopener">
-        <img class="soc-ico" src="../img/max.png" alt="" aria-hidden="true">MAX
+        <img class="soc-ico" src="../img/max.png" width="24" height="24" loading="lazy" alt="" aria-hidden="true">MAX
       </a>
       <a class="soc soc-yt" href="https://www.youtube.com/channel/UC1ZiBDK86qS6Nwf5QTrrt1Q" target="_blank" rel="noopener">
         <svg class="soc-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="4.5" width="22" height="15" rx="4.5" fill="#fff"/><path d="M10 8.8v6.4l5.6-3.2z" fill="#FF0000"/></svg>YouTube

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://kovalevandre.ru/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="http://kovalevandre.ru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="http://kovalevandre.ru/en/"/>
+  </url>
+  <url>
+    <loc>http://kovalevandre.ru/en/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="http://kovalevandre.ru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="http://kovalevandre.ru/en/"/>
+  </url>
+</urlset>

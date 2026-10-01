@@ -302,3 +302,27 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .doc-view img{display:block;max-width:min(94vw,960px);max-height:92vh;width:auto;height:auto;box-shadow:0 20px 60px rgba(0,0,0,.6)}
 .doc-close{position:absolute;top:10px;right:10px;width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:rgba(19,22,27,.9);color:var(--shirt);font-size:26px;line-height:1;cursor:pointer}
 .doc-close:hover{border-color:var(--lamp)}
+
+/* размеры картинок заданы в разметке – пропорции сохраняются */
+img{height:auto}
+
+/* меню на телефоне */
+.menu-btn{display:none}
+@media (max-width:820px){
+  .menu-btn{display:inline-flex;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;margin-left:auto;padding:0 11px;background:transparent;border:1px solid var(--line);border-radius:2px;cursor:pointer}
+  .menu-btn span{display:block;height:2px;background:var(--lamp-soft);border-radius:1px;transition:transform .25s,opacity .2s}
+  .menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .menu-btn:focus-visible{outline:2px solid var(--lamp);outline-offset:3px}
+  .top .wrap{position:relative}
+  .nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;padding:6px 28px 18px;background:rgba(19,22,27,.98);border-bottom:1px solid var(--line);box-shadow:0 18px 30px rgba(0,0,0,.45)}
+  .nav.is-open{display:flex}
+  .nav a{padding:13px 0;font-size:17px;color:var(--shirt);border-bottom:1px solid var(--line-cool)}
+  .nav a:last-child{border-bottom:0}
+}
+@media (prefers-reduced-motion: reduce){.menu-btn span{transition:none}}
+
+/* переход по меню: заголовок раздела не прячется под шапкой */
+html{scroll-padding-top:84px}
+@media (max-width:820px){html{scroll-padding-top:128px}}

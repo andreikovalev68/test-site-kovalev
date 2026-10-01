@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://kovalevandre.ru/sitemap.xml

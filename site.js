@@ -52,3 +52,21 @@
     view.addEventListener('close', function () { big.removeAttribute('src'); });
   }
 })();
+
+/* Меню на телефоне: кнопка открывает список разделов, выбор раздела или Esc – закрывают */
+(function () {
+  'use strict';
+  var btn = document.querySelector('.menu-btn');
+  var nav = document.getElementById('site-nav');
+  if (!btn || !nav) return;
+  var isRu = document.documentElement.lang === 'ru';
+  function setOpen(open) {
+    nav.classList.toggle('is-open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.setAttribute('aria-label', open ? (isRu ? 'Закрыть меню' : 'Close menu') : (isRu ? 'Открыть меню' : 'Open menu'));
+  }
+  btn.addEventListener('click', function () { setOpen(!nav.classList.contains('is-open')); });
+  nav.addEventListener('click', function (e) { if (e.target.closest('a')) setOpen(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && nav.classList.contains('is-open')) { setOpen(false); btn.focus(); } });
+  document.addEventListener('click', function (e) { if (nav.classList.contains('is-open') && !nav.contains(e.target) && !btn.contains(e.target)) setOpen(false); });
+})();
